@@ -1,6 +1,5 @@
 #include<iostream>
 #include "decisions.h"
-#include "decisions.cpp"
 //write include statements
 
 /*
@@ -24,7 +23,7 @@ GPA 3.0
 */
 int main() 
 {
-	double letter_grade;
+	std::string letter_grade;
 	double hours;
 
 	std::cout << "Enter a letter grade";
@@ -33,7 +32,7 @@ int main()
 	std::cin >> hours;
 
 	double points;
-	points = get_grade_points(letter_grade);
+	points = get_grade_points(letter_grade) * hours;
 
 	double gpa;
 	gpa = calculate_gpa(hours, points);
