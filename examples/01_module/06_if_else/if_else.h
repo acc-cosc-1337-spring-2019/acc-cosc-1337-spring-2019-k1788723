@@ -2,4 +2,4 @@
 //returns a string
 #include<string>
 
-string::std get_generation(int year);
+std::string get_generation(int year);

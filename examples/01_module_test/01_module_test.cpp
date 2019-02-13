@@ -47,3 +47,10 @@ TEST_CASE("Test get_generation function")
 //value 4 result should be 'Option 4'
 //value 5 result should be 'Invalid Option'
 
+TEST_CASE("Test menu option function")
+{
+	REQUIRE(menu_option(1) == "option 1");
+	REQUIRE(menu_option(2) == "option 2");
+	REQUIRE(menu_option(100) == "invalid option");
+
+}

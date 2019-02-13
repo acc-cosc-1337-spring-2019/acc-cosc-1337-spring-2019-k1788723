@@ -3,7 +3,7 @@
 using std::cout;
 using std::cin;
 
-int main() 
+int main()
 {
 	//create a bool variable named even
 	//create an int variable named value
@@ -27,3 +27,4 @@ int main()
 		cout << value << "is odd";
 	}
 	return 0;
+}
