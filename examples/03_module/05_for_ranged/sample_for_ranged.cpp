@@ -41,3 +41,28 @@ void loop_vector_w_auto()
 }
 
 
+void loop_vector_w_index(std::vector<int> value);   //pass by value
+{
+	values[0] = 1000;
+	for (int i = 0; i < values.size(); ++i)
+	{
+		std::cout << values[i] << "\n";
+	}
+}
+
+void loop_vector(std::vector<int>& value);   //pass by reference
+{
+	values[0] = 1000;
+	for (int i = 0; i < values.size(); ++i)
+	{
+		std::cout << values[i] << "\n";
+	}
+}
+
+void loop_const_vector(const std::vector<int>& values)
+{
+	for (auto v : values)
+	{
+		std::cout << v << "\n";
+	}
+}
