@@ -8,7 +8,7 @@ Return quotient.
 */
 double get_gc_content(const std::string& dna)
 {
-	int count = 0
+	double count = 0;
 
 	for (auto d : dna)
 	{
@@ -48,7 +48,7 @@ std::string get_dna_complement(std::string dna)
 	std::string reverse = get_reverse_string(dna);
 	for (auto& d : reverse)
 	{
-		if
+		
 	}
 	return reverse;
 }

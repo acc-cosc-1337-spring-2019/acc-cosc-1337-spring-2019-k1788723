@@ -1,11 +1,10 @@
 #include "sequence.h"
-#include<string>
 #include<iostream>
 /*
 Write code for void function display_vector that accepts parameter const reference vector of strings.
 The function will iterate through the vector and display a string per line.
 */
-void display_vector(const std::vector<string>&, values)
+void display_vector(const std::vector<std::string>& values)
 {
 	for (auto v : values)
 	{
