@@ -11,21 +11,23 @@
 
 std::string menu_option(int num)
 {
-	switch (num)
+	
+	switch (num) 
 	{
 	case 1:
-		return "option 1";
+		return "Option 1";
 		break;
 	case 2:
-		return "option 2";
+		return "Option 2";
 		break;
 	case 3:
-		return "option 3";
+		return "Option 3";
 		break;
 	case 4:
-		return "option 4";
+		return "Option 4";
 		break;
 	default:
-		return "invalid option";
+		return "Invalid Option";
 	}
+	
 }
