@@ -1,9 +1,10 @@
 #include<string>
+#include<vector>
 
 /*
 Write prototype for void function display_vector that accepts a parameter const reference vector of strings
 */
-void display_vector(const std::vector<std::string>&, values);
+void display_vector(const std::vector<std::string>& values);
 
 /*
 Write prototype for void function update_vector_element that accepts parameters reference vector of strings,
