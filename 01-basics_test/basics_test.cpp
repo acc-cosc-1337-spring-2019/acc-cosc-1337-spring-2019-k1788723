@@ -17,3 +17,4 @@ TEST_CASE("Test multiply_numbers", "[2,5,10]") {
 	REQUIRE(multiply_numbers(2, 2) == 4);
 	REQUIRE(multiply_numbers(5, 5) == 25);
 	REQUIRE(multiply_numbers(10, 10) == 100);
+}
