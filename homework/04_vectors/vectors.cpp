@@ -12,15 +12,15 @@ vector of intsparameter that returns the max value in a vector
 
 int get_max_from_vector(const std::vector<int>& numbers)
 {
-	int maxNum = 0
+	int maxNum = 0;
 	for (auto n : numbers)
 	{
-		if n > 0
+		if( n > 0)
 		{
-			maxNum == n;
+			maxNum = n;
 		}
 	}
-	return 0;
+	return maxNum;
 }
 
 /*
@@ -35,15 +35,15 @@ bool is_prime(int numbers)
 	bool is_prime = true;
 	int i;
 	i = 2;
-	while (i < n)
+	while (i < numbers)
 	{
-		if (n % i == 0)
+		if (numbers % i == 0)
 		{
 			is_prime = false;
-			i++
+			i++;
 		}
 	}
-	return 0;
+	return is_prime;
 }
 
 /*
@@ -63,7 +63,7 @@ vector<int> vector_of_primes(int numbers)
 {
 	vector<int> primes;
 
-	for (int i = 1; i < numbers; ++1)
+	for (int i = 1; i < numbers; ++i)
 	{
 		if (is_prime(i))
 		{

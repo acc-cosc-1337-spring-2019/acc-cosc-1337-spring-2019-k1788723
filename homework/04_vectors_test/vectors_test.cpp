@@ -1,5 +1,6 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
+#include"vectors.h"
 
 
 TEST_CASE("Verify Test Configuration", "verification") {
@@ -14,14 +15,12 @@ vector values 150,120,11,990,88888 returns 88888
 */
 TEST_CASE("Test max")
 {
-	std::vector<int> num = (3, 8, 1, 99, 1000);
-	std::vector<int> nums = (15, 12, 11, 99, 88);
-	std::vector<int> nums = (150, 120, 11, 990, 88888);
-	get_max_from_vector(nums);
-	for int i = 0; i < num.size(); ++1;
-	{
-		REQUIRE(num[i] == nums[i]);
-	}
+	std::vector<int> num = { 3, 8, 1, 99, 1000 };
+	std::vector<int> num1 = { 15, 12, 11, 99, 88 };
+	std::vector<int> num2 = { 150, 120, 11, 990, 88888 };
+	get_max_from_vector(num);
+	REQUIRE(get_max_from_vector(num) == 1000);
+	
 }
 /*
 Write a test case for is_prime with values:
@@ -49,10 +48,9 @@ argument 50 return vector should have the following items:
 
 TEST_CASE("Test vector of primes")
 {
-	std::vector<int> num = (2, 3, 5, 7);
-	std::vector<int> nums = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47);
-	vector_of_primes(nums);
-	for int i = 0; i < num.size(); ++1;
+	std::vector<int> num = { 2, 3, 5, 7 };
+	std::vector<int> nums = vector_of_primes(10);
+	for( int i = 0; i < num.size(); ++i)
 	{
 		REQUIRE(num[i] == nums[i]);
 	}

@@ -16,9 +16,9 @@ int main()
 	std::cin >> choice;
 	std::cout << "Enter 1 to get the max. Enter 2 to get primes.";
 	std::cin >> menu_choice;
-
-	max = get_max_from_vector(choice);
-	prime = vector_of_primes(choice);
+	int max;
+	//int max = get_max_from_vector(choice);
+	std::vector<int> prime = vector_of_primes(choice);
 
 	if (menu_choice == 1)
 	{
@@ -26,7 +26,7 @@ int main()
 	}
 	else
 	{
-		std::cout << "List of primes:" << prime;
+		//std::cout << "List of primes:" << prime;
 	}
 
 	return 0;
