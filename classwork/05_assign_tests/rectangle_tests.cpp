@@ -18,3 +18,15 @@ TEST_CASE("TESTING")
 {
 	REQUIRE(return_val() == 1);
 }
+
+TEST_CASE("Test Rectangle class")
+{
+	Rectangle area(4, 5); // creates instance
+	REQUIRE(area.get_area() == 20);
+
+	Rectangle area(10, 10); 
+	REQUIRE(area.get_area() == 100);
+
+	Rectangle area(100, 10);
+	REQUIRE(area.get_area() == 1000);
+}
