@@ -5,17 +5,17 @@ has one public function area that returns the area of the rectangle, and one pri
 that calculates area of the rectangle.  The class has 3 int private variables area, width, and height.
 */
 
-Rectangle::Rectangle(int width, int height):
-	w(width), h(height)
+Rectangle::Rectangle(int w, int h) : height(h) , width(w)
 {
+	calculate_area();
 }
 
 int Rectangle::get_area() const
 {
-	return a;
+	return area;
 }
 
 void Rectangle::calculate_area()
 {
-	a = w * h;
+	area = width * height
 }

@@ -1,4 +1,9 @@
 #include "bank_account.h"
+ 
+BankAccount::BankAccount(int act, double bal) :
+	account_number(12345), balance(500)
+{
+}
 
 BankAccount::BankAccount(int act, double bal) :
 	account_number(act), balance(bal)

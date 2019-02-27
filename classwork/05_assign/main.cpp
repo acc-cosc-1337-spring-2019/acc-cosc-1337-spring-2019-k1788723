@@ -16,15 +16,14 @@ Iterate the vector and display the Area for each Rectangle on one line and the t
 
 int main() 
 {
-	std::vector<Rectangle> area;
-	Rectangle area(4, 5);
-	Rectangle area(10, 10);
-	Rectangle area(100, 10);
+	std::vector<Rectangle> rectangles = Rectangle(4, 5), Rectangle(10, 10), Rectangle(100, 10);
 
-	for (auto a : area)         //iterates the vector
+	for (auto r : rectangles)         //iterates the vector
 	{
-		std::cout << a.get_area() << "\n";
+		std::cout << r.get_area() << "\n";
+		total_area += r.get_area();
 	}
+	std::cout << "Total Area: " << total_area;
 
 	return 0;
 }

@@ -9,14 +9,12 @@ that calculates area of the rectangle.  The class has 3 int private variables ar
 class Rectangle
 {
 public:
-	Rectangle(int width, int height);//constructor
+	Rectangle(int w, int h);//constructor
 
 	int get_area() const;
 
 private:             
 	void calculate_area();
-	int h;
-	int w;
-	int a;
+	int area, height, width
 
 };
