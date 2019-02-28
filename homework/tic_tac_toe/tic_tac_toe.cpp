@@ -87,7 +87,7 @@ bool TicTacToe::check_diagonal_win()
 	{
 		return true;
 	}
-	else if (pegs[2] == pegs[4] && pegs[4] == pegs[6] && pegs[6] != " ")
+	else if (pegs[6] == pegs[4] && pegs[4] == pegs[2] && pegs[2] != " ")
 	{
 		return true;
 	}
@@ -116,5 +116,5 @@ void TicTacToe::clear_board()
 }
 void TicTacToe::display_board() const
 {
-	std::cout << mark_board();
+	std::cout << "Enter position: " << mark_board(position);
 }

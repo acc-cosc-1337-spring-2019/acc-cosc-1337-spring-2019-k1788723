@@ -8,6 +8,8 @@ int main()
 	
 	std::cout << "Player one: choose X or O";
 	std::cin >> first_player;
+
+	TicTacToe.display_board();
 	
 
 	return 0;
