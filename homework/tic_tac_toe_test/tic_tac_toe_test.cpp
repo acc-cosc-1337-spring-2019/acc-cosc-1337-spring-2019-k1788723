@@ -36,7 +36,7 @@ TEST_CASE("Test win by first column", "[X wins first column]")
 	   First column win are user positions 1,4, and 7
 vector view: 0, 3, and 6
 	   */
-	TicTacToeBoard board;
+	TicTacToe board;
 	board.start_game("X");
 	REQUIRE(board.game_over() == false);
 	board.mark_board(1);//X         
@@ -53,7 +53,7 @@ vector view: 0, 3, and 6
 }
 TEST_CASE("Test win by second column", "[X wins second column]")
 {
-	TicTacToeBoard board;
+	TicTacToe board;
 	board.start_game("X");
 	REQUIRE(board.game_over() == false);
 	board.mark_board(2);//X         
@@ -70,7 +70,7 @@ TEST_CASE("Test win by second column", "[X wins second column]")
 }
 TEST_CASE("Test win by third column", "[X wins third column]")
 {
-	TicTacToeBoard board;
+	TicTacToe board;
 	board.start_game("X");
 	REQUIRE(board.game_over() == false);
 	board.mark_board(3);//X         
@@ -87,7 +87,7 @@ TEST_CASE("Test win by third column", "[X wins third column]")
 }
 TEST_CASE("Test win by first row", "[X wins first row]")
 {
-	TicTacToeBoard board;
+	TicTacToe board;
 	board.start_game("X");
 	REQUIRE(board.game_over() == false);
 	board.mark_board(1);//X         
@@ -104,7 +104,7 @@ TEST_CASE("Test win by first row", "[X wins first row]")
 }
 TEST_CASE("Test win by second row", "[X wins second row]")
 {
-	TicTacToeBoard board;
+	TicTacToe board;
 	board.start_game("X");
 	REQUIRE(board.game_over() == false);
 	board.mark_board(4);//X         
@@ -121,7 +121,7 @@ TEST_CASE("Test win by second row", "[X wins second row]")
 }
 TEST_CASE("Test win by third row", "[X wins third row]")
 {
-	TicTacToeBoard board;
+	TicTacToe board;
 	board.start_game("X");
 	REQUIRE(board.game_over() == false);
 	board.mark_board(7);//X         
@@ -138,7 +138,7 @@ TEST_CASE("Test win by third row", "[X wins third row]")
 }
 TEST_CASE("Test win diagonally from top left", "[X wins]")
 {
-	TicTacToeBoard board;
+	TicTacToe board;
 	board.start_game("X");
 	REQUIRE(board.game_over() == false);
 	board.mark_board(1);//X         
@@ -155,7 +155,7 @@ TEST_CASE("Test win diagonally from top left", "[X wins]")
 }
 TEST_CASE("Test win diagonally from bottom left", "[X wins]")
 {
-	TicTacToeBoard board;
+	TicTacToe board;
 	board.start_game("X");
 	REQUIRE(board.game_over() == false);
 	board.mark_board(7);//X         
@@ -172,7 +172,7 @@ TEST_CASE("Test win diagonally from bottom left", "[X wins]")
 }
 TEST_CASE("Test no winner")
 {
-	TicTacToeBoard board;
+	TicTacToe board;
 	board.start_game("X");
 	REQUIRE(board.game_over() == false);
 	board.mark_board(1);//X         

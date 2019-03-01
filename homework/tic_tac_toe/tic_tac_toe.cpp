@@ -35,14 +35,14 @@ void TicTacToe::set_next_player()
 	}
 	else
 	{
-		next_player == "X"
+		next_player == "X";
 	}
 }
 /*
  win by column if
  0,3,6 are equal
  1,4,7 
- 2,5, 6
+ 2,5, 8
  else false
 */
 bool TicTacToe::check_column_win()
@@ -65,19 +65,13 @@ win by row if
 */
 bool TicTacToe::check_row_win()
 {
-	if (pegs[0] == pegs[1] && pegs[1] == pegs[2] && pegs[2] != " ")
+	for (std::size_t i = 0; i < 9; i += 3)
 	{
-		return true;
+		if (pegs[i] == pegs[i + 1] && pegs[i + 1] == pegs[i + 2] && pegs[i + 2] != " ")
+		{
+			return true;
+		}
 	}
-	else if (pegs[3] == pegs[4] && pegs[4] == pegs[5] && pegs[5] != " ")
-	{
-		return true;
-	}
-	else if (pegs[6] == pegs[7] && pegs[7] == pegs[8] && pegs[8] != " ")
-	{
-		return true;
-	}
-
 	return false;
 }
 
@@ -91,27 +85,30 @@ bool TicTacToe::check_diagonal_win()
 	{
 		return true;
 	}
-
-	return false;
+	else
+	{
+		return false;
+	}
+	
 }
 
 bool TicTacToe::check_board_full()
 {
-	for (std::size_t i = 0; i <= 9; ++i)
+	for (auto& p : pegs)
 	{
-		if (pegs[i] != " ")
+		if (p == " ")
 		{
-			return true;
+			return false;
 		}
 	}
-	return false;
+	return true;
 }
 
 void TicTacToe::clear_board()
 {
-	for (auto i : pegs)
+	for (auto& p : pegs)
 	{
-		i = " ";
+		p = " ";
 	}
 }
 void TicTacToe::display_board() const
