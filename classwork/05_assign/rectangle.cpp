@@ -17,5 +17,5 @@ int Rectangle::get_area() const
 
 void Rectangle::calculate_area()
 {
-	area = width * height
+	area = width * height;
 }

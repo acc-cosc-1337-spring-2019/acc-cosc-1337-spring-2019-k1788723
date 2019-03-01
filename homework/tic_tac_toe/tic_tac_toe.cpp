@@ -14,7 +14,7 @@ std::string TicTacToe::get_player() const
 
 bool TicTacToe::game_over() 
 {
-	if (check_column_win() || check_row_win() || check_diagonal_win())
+	if (check_column_win() || check_row_win() || check_diagonal_win() || check_board_full())
 	{
 		return true;
 	}
@@ -113,5 +113,8 @@ void TicTacToe::clear_board()
 }
 void TicTacToe::display_board() const
 {
-	std::cout << "Enter position: " << mark_board(position);
+	for (std::size_t i = 0; i < 9; i += 3)
+	{
+		std::cout << pegs[i] << "|" << pegs[i + 1] << "|" << pegs[i + 2];
+	}
 }

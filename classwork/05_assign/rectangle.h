@@ -15,6 +15,6 @@ public:
 
 private:             
 	void calculate_area();
-	int area, height, width
+	int area, height, width;
 
 };
