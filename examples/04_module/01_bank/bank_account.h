@@ -1,10 +1,10 @@
 #ifndef BANK_ACCOUNT_H
-#define BANK_ACCOUNT_H
+#define BANK_ACCOUNT_H   //header guard
 
 class BankAccount 
 {
 public:
-	BankAccount();  //overloading constructor
+	BankAccount() = default //default constructor, overloading
 	BankAccount(int act, double bal);//constructor
 	
 	double get_balance() const;

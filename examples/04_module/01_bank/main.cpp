@@ -5,8 +5,11 @@
 
 int main() 
 {
-	ATM atm();
+	BankAccount account(123456, 500)
+	Customer customer(account);
+	ATM(customer);
 	atm.display_balance();
+
 
 	/*std::vector<BankAccount> accounts;
 
