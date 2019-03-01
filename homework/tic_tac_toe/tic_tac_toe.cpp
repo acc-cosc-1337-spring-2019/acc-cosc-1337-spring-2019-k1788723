@@ -31,11 +31,11 @@ void TicTacToe::set_next_player()
 {
 	if(next_player == "X")
 	{
-		next_player == "O";
+		next_player = "O";
 	}
 	else
 	{
-		next_player == "X";
+		next_player = "X";
 	}
 }
 /*
@@ -115,6 +115,6 @@ void TicTacToe::display_board() const
 {
 	for (std::size_t i = 0; i < 9; i += 3)
 	{
-		std::cout << pegs[i] << "|" << pegs[i + 1] << "|" << pegs[i + 2];
+		std::cout << pegs[i] << "|" << pegs[i + 1] << "|" << pegs[i + 2] << "\n";
 	}
 }

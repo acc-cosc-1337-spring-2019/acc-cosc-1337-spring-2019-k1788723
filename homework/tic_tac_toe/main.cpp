@@ -20,22 +20,13 @@ int main()
 			std::cout << "Enter position";
 			std::cin >> position;
 			tic_tac_toe.mark_board(position);
-
+			tic_tac_toe.display_board();
 		 }
 
 		std::cout << "play again";
 		std::cin >> choice;
 
-	} (while choice == "y");
-	/*
-	TicTacToe TicTacToe();
-	TicTacToe.start_game(std::string first_player);
-	
-	std::cout << "Player one: choose X or O";
-	std::cin >> first_player;
-
-	TicTacToe.display_board();*/
-	
+	} while (choice == 'y');
 
 	return 0;
 }
