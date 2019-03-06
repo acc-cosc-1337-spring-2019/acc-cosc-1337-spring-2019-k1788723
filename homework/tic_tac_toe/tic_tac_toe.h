@@ -10,6 +10,7 @@ public:
 	bool game_over();
 	void mark_board(int position);
 	void display_board() const;
+	void save_game(const TicTacToe b)
 
 
 private:
@@ -22,6 +23,9 @@ private:
 	bool check_diagonal_win();
 	void clear_board();
 	bool check_board_full();
+	std::string winner;
+	void set_winner();
+	std::string get_winner();
 
 	
 };

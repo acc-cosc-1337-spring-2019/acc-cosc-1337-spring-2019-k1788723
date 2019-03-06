@@ -6,7 +6,7 @@
 class Customer
 {
 public:
-	customer(BankAccount act) : account(act) {}   
+	Customer(BankAccount act) : account(act) {}   
 	double get_balance() const {return account.get_balance();} 
 private:
 	BankAccount account;

@@ -1,5 +1,6 @@
 #ifndef BANK_ACCOUNT_H
 #define BANK_ACCOUNT_H   //header guard
+#include <iostream>
 
 class BankAccount 
 {
@@ -10,6 +11,10 @@ public:
 	double get_balance() const;
 	void deposit(double amount);
 	void withdraw(double amount);
+	friend void display(const BankAccount& act); // const makes it read only
+	friend BankAccount operator +(BankAccount& act1, const BankAccount& act2);
+	friend std::ostream & operator << (std::ostream & out, const BankAccount & b);
+
 
 private:             // utility functions to take care of small tasks
 	int account_number;

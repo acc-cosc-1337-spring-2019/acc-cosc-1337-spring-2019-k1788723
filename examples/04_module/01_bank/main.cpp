@@ -1,5 +1,4 @@
 #include "bank_account.h"
-#include<vector>
 #include<iostream>
 #include "atm.h"
 
@@ -9,7 +8,16 @@ int main()
 	Customer customer(account);
 	ATM(customer);
 	atm.display_balance();
+	display(account);
 
+	BankAccount b(1, 900);
+	BankAccount c = account + b;  //calls operator+
+	//std::cout << c;
+	//std::cin >> c;
+
+	std::cout << "\n";
+	//display(c);
+	std::cout << c << "\n";
 
 	/*std::vector<BankAccount> accounts;
 
@@ -24,5 +32,11 @@ int main()
 		std::cout << act.get_balance() << "\n";
 	}*/
 
+	/*
+	for(auto tic_tac_toe: list)
+	{
+	cout<<tic_tac_toe << "\n
+	}
+	*/
 	return 0;
 }
