@@ -194,4 +194,5 @@ TEST_CASE("Test no winner")
 	board.mark_board(9);//X 
  
 	REQUIRE(board.game_over() == true);
+	REQUIRE(board.set_winner() == "C");
 }

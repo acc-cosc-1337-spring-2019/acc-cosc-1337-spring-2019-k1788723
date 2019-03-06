@@ -10,7 +10,7 @@ public:
 	bool game_over();
 	void mark_board(int position);
 	void display_board() const;
-	void save_game(const TicTacToe b)
+	
 
 
 private:
