@@ -3,7 +3,7 @@
 #include <string>
 
 int main() 
-{
+{ 
 	std::string first;
 	char choice;
 	int position;

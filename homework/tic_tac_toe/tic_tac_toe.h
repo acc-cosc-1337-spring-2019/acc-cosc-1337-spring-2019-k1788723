@@ -12,7 +12,6 @@ public:
 	void display_board() const;
 	
 
-
 private:
 	std::string next_player;
 	std::vector<std::string> pegs{ 9, " "};

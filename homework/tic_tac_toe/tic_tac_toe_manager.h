@@ -6,7 +6,7 @@
 //Write class interface here
 class TicTacToeManager
 {
-public:
+public: 
 
 	void save_game(const TicTacToe b);
 	void display_history()const;

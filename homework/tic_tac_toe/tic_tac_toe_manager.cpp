@@ -5,7 +5,7 @@ void TicTacToeManager::save_game(const TicTacToe b)
 {
 
 }
-
+ 
 void TicTacToeManager::display_history() const
 {
 

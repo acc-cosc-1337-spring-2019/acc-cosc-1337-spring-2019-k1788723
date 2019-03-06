@@ -28,7 +28,7 @@ void loop_vector_w_index()
 	{
 		std::cout << nums[i] << "\n";
 	}
-}
+} 
 
 void loop_vector_w_auto() 
 {
