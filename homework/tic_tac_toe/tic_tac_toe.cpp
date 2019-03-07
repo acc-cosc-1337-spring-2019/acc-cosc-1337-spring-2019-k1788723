@@ -123,4 +123,19 @@ void TicTacToe::display_board() const
 		std::cout << pegs[i] << "|" << pegs[i + 1] << "|" << pegs[i + 2] << "\n";
 	}
 }
- 
+void TicTacToe::set_winner()
+{
+	if (check_board_full() == true)
+	{
+		winner = "C";
+	}
+	else
+	{
+		winner = next_player;
+	}
+}
+
+std::string TicTacToe::get_winner()
+{
+	return winner;
+}
