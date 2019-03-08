@@ -8,14 +8,14 @@ class TicTacToeManager
 {
 public: 
 
-	void save_game(const TicTacToe b);
+	void save_game(const TicTacToe games);
 	void display_history()const;
 
 private:
 	std::vector<TicTacToe> games;
-	int x_win;
-	int o_win;
-	int ties;
+	int x_win{ 0 };
+	int o_win{ 0 };
+	int ties{ 0 };
 	void update_winner_count(std::string winner);
 	
 };
