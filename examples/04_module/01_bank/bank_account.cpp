@@ -8,8 +8,8 @@ BankAccount::BankAccount(int act, double bal) :
 
 double BankAccount::get_balance() const
 {
-	std::string("Inquiry");
-	Transaction t(type, 0, balance);
+
+	Transaction t("Inquiry", 0, balance);
 	//transactions.push_back();
 	return balance;
 }
