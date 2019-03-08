@@ -16,6 +16,7 @@ bool TicTacToe::game_over()
 {
 	if (check_column_win() || check_row_win() || check_diagonal_win() || check_board_full())
 	{
+		set_winner();
 		return true;
 	}
 	return false;
@@ -123,7 +124,7 @@ void TicTacToe::display_board() const
 		std::cout << pegs[i] << "|" << pegs[i + 1] << "|" << pegs[i + 2] << "\n";
 	}
 }
-void TicTacToe::set_winner(std::string winner)
+void TicTacToe::set_winner()
 {
 	if (check_board_full() == true)
 	{

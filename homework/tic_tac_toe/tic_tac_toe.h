@@ -23,7 +23,7 @@ private:
 	void clear_board();
 	bool check_board_full();
 	std::string winner;
-	void set_winner(std::string winner);
+	void set_winner();
 	
 
 	

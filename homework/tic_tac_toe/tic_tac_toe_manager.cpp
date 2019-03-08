@@ -1,9 +1,9 @@
 #include "tic_tac_toe_manager.h"
 //Write class function implementations here
 
-void TicTacToeManager::save_game(const TicTacToe games)
+void TicTacToeManager::save_game(const TicTacToe game)
 {
-	update_winner_count(game.getwinner());
+	update_winner_count(game.get_winner());
 	games.push_back(game);
 }
  
@@ -11,7 +11,7 @@ void TicTacToeManager::display_history() const
 {
 	for (auto game : games)
 	{
-		game.display_board;
+		game.display_board();
 	}
 }
 
