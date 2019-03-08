@@ -7,8 +7,10 @@
 class ATM
 {
 public:
-	ATM(Customer c) : customer(c) {}
+	ATM(Customer& c) : customer(c) {} //reference
 	void display_balance();
+	void deposit(double amt);
+	void withdraw(double amt);
 /*
 AM() : account(1,5) {} //initializer list
 	ATM(BankAccount a) : account(a) {}   //overloading
@@ -16,7 +18,7 @@ AM() : account(1,5) {} //initializer list
 
 
 private:
-	Customer customer;
+	Customer& customer;
 };
 
 #endif //ATM_H

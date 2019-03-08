@@ -4,12 +4,14 @@
 
 int main() 
 {
-	BankAccount account(123456, 500)
+	BankAccount account(123456, 500);  //reference not copy
 	Customer customer(account);
 	ATM(customer);
 	atm.display_balance();
-	display(account);
+	atm.deposit(50);
+	atm.display_balance();
 
+	
 	BankAccount b(1, 900);
 	BankAccount c = account + b;  //calls operator+
 	//std::cout << c;
