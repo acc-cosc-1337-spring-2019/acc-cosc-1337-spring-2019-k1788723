@@ -1,5 +1,6 @@
 #include<string>
 #include<vector>
+#include<iostream>
 
 class TicTacToe 
 {
@@ -9,8 +10,9 @@ public:
 
 	bool game_over();
 	void mark_board(int position);
-	void display_board() const;
-	
+	//void display_board() const;
+	friend std::ostream & operator << (std::ostream & out, const TicTacToe & b);
+	friend std::istream & operator >> (std::istream & in, TicTacToe & b);
 
 private:
 	std::string next_player;

@@ -7,10 +7,10 @@ void TicTacToeManager::save_game(const TicTacToe b)
 	update_winner_count(winner);
 }
  
-void TicTacToeManager::display_history() const
+/*void TicTacToeManager::display_history() const
 {
 	TicTacToe.get_winner();
-}
+}*/
 
 void TicTacToeManager::update_winner_count(std::string winner)
 {
@@ -31,4 +31,13 @@ void TicTacToeManager::update_winner_count(std::string winner)
 		ties += 1;
 	}
 
+}
+
+std::ostream & operator<<(std::ostream & out, const TicTacToeManager & b)
+{
+	for (auto g : games)
+	{
+		out << g.get_winner;
+	}
+	return out;
 }

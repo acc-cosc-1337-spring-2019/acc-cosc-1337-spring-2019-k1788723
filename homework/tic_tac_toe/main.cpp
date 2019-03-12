@@ -17,8 +17,9 @@ int main()
 		
 		while (tic_tac_toe.game_over() == false)
 		{
-			std::cout << "Enter position";
-			std::cin >> position;
+			TicTacToe >> position;
+			//std::cout << "Enter position";
+			//std::cin >> position;
 			tic_tac_toe.mark_board(position);
 			tic_tac_toe.display_board();
 		 }
