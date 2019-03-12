@@ -9,7 +9,8 @@ class TicTacToeManager
 public: 
 
 	void save_game(const TicTacToe games);
-	void display_history()const;
+	//void display_history()const;
+	friend std::ostream & operator << (std::ostream & out, const TicTacToeManager & g);
 
 private:
 	std::vector<TicTacToe> games;
